@@ -13,6 +13,7 @@ import { Spinner } from './ui/spinner'
 export function Chat() {
   const containerRef = useRef<HTMLDivElement | null>(null)
   const useChatHelpers = useChat({
+    api: '/api/chat',
     initialMessages,
     streamProtocol: 'text',
   })
